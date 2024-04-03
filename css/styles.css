@@ -403,11 +403,9 @@ nav ul.open {
 
 main h1, div.allCards {
   margin: 2vw;
-  background-color: green;
 }
 
 div.hero {
-  border: red solid 2px;
   position: relative;
 }
 div.hero img {
@@ -416,7 +414,6 @@ div.hero img {
   display: block;
 }
 div.hero h1 {
-  background-color: green;
   margin: 0;
 }
 div.hero p {
@@ -427,7 +424,7 @@ div.hero p {
   width: 100%;
   padding: 1rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: white;
 }
 
