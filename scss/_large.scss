@@ -1,0 +1,35 @@
+header, nav, main, footer {
+    max-width: 60rem;
+    margin: auto;
+}
+
+
+
+// start nav stuff
+nav {
+    display: flex;
+    justify-content: flex-end;
+    button {
+        display: none;
+    }
+    ul, ul.open{
+        display: flex;
+        border: none;
+        margin-left: 2vw; //this lines the left edges of the logo
+        li {
+            border: none;
+        }
+    }
+}
+// end nav stuff
+
+
+div.allCards {
+    section {
+        flex-basis: calc(33.33% - (($gutter *2)/3)); //there are 2 gutters in between the cards (gutter*2), and there are 3 cards per row (/3)
+    }
+}
+
+footer div {
+    grid-template-columns: auto auto auto;
+}

@@ -1,0 +1,22 @@
+header {
+ padding: 2rem $gutter;
+ h1 {
+    font-size: 2rem;
+    font-weight: $boldWeight;
+}   
+}
+
+div.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gutter;
+    section {
+        flex-basis: calc(50% - ($gutter/2));
+    }
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
