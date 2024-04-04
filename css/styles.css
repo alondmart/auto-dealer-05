@@ -326,8 +326,8 @@ html {
 
 body {
   height: 100%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
   color: #333;
 }
 
@@ -347,7 +347,7 @@ header a.phone {
   grid-column: 3/span 1;
   color: #2A324B;
 }
-header a:hover {
+header a.phone:hover {
   background-color: rgb(167, 167, 167);
   border-radius: 5px;
 }
@@ -394,13 +394,13 @@ nav ul li.active a {
   background-color: #6B8F71;
 }
 nav ul li a:hover {
-  background-color: #87a68c;
+  background-color: #cdbebe;
 }
 nav ul.open {
   display: block;
 }
 
-main h1, div.serviceCards, div.reviewContainer {
+main h1, div.serviceCards, #cards {
   margin: 2vw;
 }
 
@@ -448,6 +448,7 @@ div.serviceCards section img {
   display: block;
 }
 div.serviceCards section div.animationContainer {
+  padding-top: 5px;
   height: auto;
   width: 100%;
   overflow: hidden;
@@ -468,14 +469,14 @@ div.serviceCards section a {
   border-radius: 8px;
   color: black;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
 }
 div.serviceCards section a:hover {
   background-color: #608065;
 }
 
 div.reviewContainer {
-  background-color: lightblue;
+  background-color: #E3DBDB;
   text-align: center;
   padding: 2rem 0;
 }
@@ -487,8 +488,12 @@ div.reviewContainer img {
   text-align: center;
 }
 #cards h3 {
+  font-weight: 700;
   margin: 2rem 16px 0.2rem 16px;
   text-align: center;
+}
+#cards p {
+  margin: 0.2rem 0;
 }
 
 #footerWrapper {
@@ -513,7 +518,7 @@ footer p.legal {
   }
   header h1 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   nav {
     display: flex;
