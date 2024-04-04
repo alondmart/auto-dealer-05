@@ -24,7 +24,7 @@ nav {
 // end nav stuff
 
 
-div.allCards {
+div.serviceCards {
     section {
         flex-basis: calc(33.33% - (($gutter *2)/3)); //there are 2 gutters in between the cards (gutter*2), and there are 3 cards per row (/3)
     }

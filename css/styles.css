@@ -346,7 +346,7 @@ header {
 header a.phone {
   grid-column: 3/span 1;
 }
-header change the color of the phone icon when i have the color palette chosen a:hover {
+header a:hover {
   background-color: rgb(167, 167, 167);
   border-radius: 5px;
 }
@@ -399,7 +399,7 @@ nav ul.open {
   display: block;
 }
 
-main h1, div.allCards {
+main h1, div.serviceCards, div.reviewContainer {
   margin: 2vw;
 }
 
@@ -426,42 +426,40 @@ div.hero p {
   color: white;
 }
 
-div.allCards section {
+div.serviceCards section {
   border: 2px solid #99bbb4;
   border-radius: 10px;
   overflow: hidden;
   margin: 1rem 0;
 }
-div.allCards section h2, div.allCards section p, div.allCards section img {
+div.serviceCards section h2, div.serviceCards section p, div.serviceCards section img {
   margin: 0;
   padding: 1rem 16px;
 }
-div.allCards section h2 {
+div.serviceCards section h2 {
   background-color: #d5e6e2;
   font-size: 1.5rem;
   text-align: center;
 }
-div.allCards section img {
-  width: 100%;
+div.serviceCards section img {
+  width: 30%;
+  margin: auto;
   height: auto;
   display: block;
 }
-div.allCards section img.e2e {
-  padding: 0;
-  transition: all 0.2s ease-in-out;
-}
-div.allCards section img.e2e:hover {
-  transform: scale(1.1);
-}
-div.allCards section div.scaleContainer {
+div.serviceCards section div.animationContainer {
   height: auto;
   width: 100%;
   overflow: hidden;
 }
-div.allCards section p {
-  font-style: italic;
+div.serviceCards section img.animation {
+  padding: 0;
+  transition: all 0.2s ease-in-out;
 }
-div.allCards section a {
+div.serviceCards section img.animation:hover {
+  transform: scale(1.1);
+}
+div.serviceCards section a {
   display: block;
   background-color: #fe9c97;
   padding: 0.75rem;
@@ -472,8 +470,25 @@ div.allCards section a {
   text-decoration: none;
   font-weight: 600;
 }
-div.allCards section a:hover {
+div.serviceCards section a:hover {
   background-color: #fe847e;
+}
+
+div.reviewContainer {
+  background-color: lightblue;
+  text-align: center;
+  padding: 2rem 0;
+}
+div.reviewContainer img {
+  width: 20px;
+}
+
+#cards {
+  text-align: center;
+}
+#cards h3 {
+  margin: 2rem 16px;
+  text-align: center;
 }
 
 #footerWrapper {
@@ -500,12 +515,12 @@ footer p.legal {
     font-size: 2rem;
     font-weight: 600;
   }
-  div.allCards {
+  div.serviceCards {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
   }
-  div.allCards section {
+  div.serviceCards section {
     flex-basis: calc(50% - 8px);
   }
   footer div {
@@ -534,7 +549,7 @@ footer p.legal {
   nav ul li, nav ul.open li {
     border: none;
   }
-  div.allCards section {
+  div.serviceCards section {
     flex-basis: calc(33.33% - 10.6666666667px);
   }
   footer div {

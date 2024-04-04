@@ -34,7 +34,7 @@ header {
         grid-template-columns: 112px auto 50px;
     a.phone {
         grid-column: 3/span 1;
-    } change the color of the phone icon when i have the color palette chosen
+    } // change the color of the phone icon when i have the color palette chosen
     a:hover {
         background-color: rgb(167, 167, 167);
         border-radius: 5px;
@@ -74,23 +74,17 @@ nav {
                 text-decoration: none;
             }
         } //end li
-        li.active a {
-            background-color: $blue;
-        }
-        li a:hover {
-            background-color: lighten($blue, 10%);
-        }
+        li.active a {background-color: $blue;}
+        li a:hover {background-color: lighten($blue, 10%);}
     }// end ul
-    ul.open {
-        display: block;
-    }
+    ul.open {display: block;}
 }
 // END NAV
 
 
 
 // START MAIN
-main h1, div.allCards{ 
+main h1, div.serviceCards, div.reviewContainer { 
     margin: 2vw;
 
 }
@@ -103,9 +97,7 @@ div.hero {
         height: auto;
         display: block;
     }
-    h1 {
-        margin: 0;
-    }
+    h1 {margin: 0;}
     p {
         position: absolute;
         background: linear-gradient(90deg, rgba(16,20,29,0.4) 0%, rgba(16,20,29,.9) 50%, rgba(16,20,29,.4) 100%);
@@ -120,7 +112,25 @@ div.hero {
 }
 
 
-div.allCards {
+
+
+//         img.e2e {
+            // padding: 0;
+            // transition: all .2s ease-in-out;
+//         }
+//         img.e2e:hover {
+//             transform: scale(1.1);
+//         }
+//         div.scaleContainer {
+            // height: auto;
+            // width: 100%;
+            // overflow: hidden;
+//         }
+
+
+
+// SERVICES PROVIDED CARDS
+div.serviceCards {
     section {
         border: 2px solid $blue;
         border-radius: 10px;
@@ -136,24 +146,22 @@ div.allCards {
             text-align: center;
         }
         img {
-            width: 100%;
+            width: 30%;
+            margin: auto;
             height: auto;
             display: block; //by default the img is inline, so we change it to block which gets rid of the small gap between things
         }
-        img.e2e {
-            padding: 0;
-            transition: all .2s ease-in-out;
-        }
-        img.e2e:hover {
-            transform: scale(1.1);
-        }
-        div.scaleContainer {
+        div.animationContainer {
             height: auto;
             width: 100%;
             overflow: hidden;
         }
-        p {
-           font-style: italic;
+        img.animation {
+            padding: 0;
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
         a {
             display: block; //by default, its inline, and changing it to block lets us add padding
@@ -169,8 +177,27 @@ div.allCards {
                 background-color: darken($primaryColor, 5%);}
         }
     }
-} // end div.allCards
+}
 
+
+// REVIEW SECTION
+div.reviewContainer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 2rem 0;
+    img {
+        width: 20px;
+    }
+}
+
+#cards {
+    text-align: center;
+    h3 {
+        margin: 2rem $gutter;
+        text-align: center;
+        
+    }
+}
 
 // END MAIN
 
