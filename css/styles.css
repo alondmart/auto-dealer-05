@@ -332,7 +332,7 @@ body {
 }
 
 #headerWrapper {
-  background-color: #d5e6e2;
+  background-color: #E3DBDB;
   color: black;
 }
 
@@ -345,6 +345,7 @@ header {
 }
 header a.phone {
   grid-column: 3/span 1;
+  color: #2A324B;
 }
 header a:hover {
   background-color: rgb(167, 167, 167);
@@ -352,7 +353,7 @@ header a:hover {
 }
 
 #navWrapper {
-  background-color: #d5e6e2;
+  background-color: #E3DBDB;
 }
 
 nav button {
@@ -378,10 +379,10 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  border-top: solid 1px #99bbb4;
+  border-top: solid 1px #6B8F71;
 }
 nav ul li {
-  border-bottom: solid 1px #99bbb4;
+  border-bottom: solid 1px #6B8F71;
 }
 nav ul li a {
   display: block;
@@ -390,10 +391,10 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li.active a {
-  background-color: #99bbb4;
+  background-color: #6B8F71;
 }
 nav ul li a:hover {
-  background-color: #b8cfcb;
+  background-color: #87a68c;
 }
 nav ul.open {
   display: block;
@@ -427,7 +428,7 @@ div.hero p {
 }
 
 div.serviceCards section {
-  border: 2px solid #99bbb4;
+  border: 2px solid #6B8F71;
   border-radius: 10px;
   overflow: hidden;
   margin: 1rem 0;
@@ -437,7 +438,6 @@ div.serviceCards section h2, div.serviceCards section p, div.serviceCards sectio
   padding: 1rem 16px;
 }
 div.serviceCards section h2 {
-  background-color: #d5e6e2;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -461,7 +461,7 @@ div.serviceCards section img.animation:hover {
 }
 div.serviceCards section a {
   display: block;
-  background-color: #fe9c97;
+  background-color: #6B8F71;
   padding: 0.75rem;
   text-align: center;
   margin: 0 3rem 1rem 3rem;
@@ -471,7 +471,7 @@ div.serviceCards section a {
   font-weight: 600;
 }
 div.serviceCards section a:hover {
-  background-color: #fe847e;
+  background-color: #608065;
 }
 
 div.reviewContainer {
@@ -487,18 +487,18 @@ div.reviewContainer img {
   text-align: center;
 }
 #cards h3 {
-  margin: 2rem 16px;
+  margin: 2rem 16px 0.2rem 16px;
   text-align: center;
 }
 
 #footerWrapper {
-  background-color: #f8f8e3;
+  background-color: #2A324B;
 }
 
 footer {
   padding: 0.5rem 16px;
   font-weight: 400;
-  color: black;
+  color: white;
 }
 footer p.legal {
   margin: 0;
@@ -515,28 +515,9 @@ footer p.legal {
     font-size: 2rem;
     font-weight: 600;
   }
-  div.serviceCards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  div.serviceCards section {
-    flex-basis: calc(50% - 8px);
-  }
-  footer div {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-  }
-}
-@media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
-    max-width: 60rem;
-    margin: auto;
-  }
   nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   nav button {
     display: none;
@@ -549,8 +530,30 @@ footer p.legal {
   nav ul li, nav ul.open li {
     border: none;
   }
+  div.serviceCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
   div.serviceCards section {
-    flex-basis: calc(33.33% - 10.6666666667px);
+    flex-basis: calc(50% - 8px);
+  }
+  div.hero p {
+    font-size: 2rem;
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 60rem) {
+  header, nav, main, footer {
+    max-width: 60rem;
+    margin: auto;
+  }
+  div.serviceCards section {
+    flex-basis: calc(25% - 12px);
   }
   footer div {
     grid-template-columns: auto auto auto;

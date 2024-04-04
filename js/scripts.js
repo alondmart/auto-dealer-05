@@ -45,8 +45,8 @@ for (let x = 0; x < reviews.length; x++){
 
     // adding elements into their card
     myCard.appendChild(myName)
-    myCard.appendChild(myReview)
     myCard.appendChild(myRating)
+    myCard.appendChild(myReview)
 
     // adding the card to the page
     allCards.appendChild(myCard)

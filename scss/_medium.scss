@@ -6,6 +6,25 @@ header {
 }   
 }
 
+// NAV STUFF
+nav {
+    display: flex;
+    justify-content: flex-start;
+    button {
+        display: none;
+    }
+    ul, ul.open{
+        display: flex;
+        border: none;
+        margin-left: 2vw; //this lines the left edges of the logo
+        li {
+            border: none;
+        }
+    }
+}
+
+
+// MAIN STUFF
 div.serviceCards {
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +34,12 @@ div.serviceCards {
     }
 }
 
+div.hero {
+    p {font-size: 2rem;}
+}
+
+
+// FOOTER STUFF
 footer div {
     display: grid;
     grid-template-columns: auto auto;

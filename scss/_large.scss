@@ -5,28 +5,9 @@ header, nav, main, footer {
 
 
 
-// start nav stuff
-nav {
-    display: flex;
-    justify-content: flex-end;
-    button {
-        display: none;
-    }
-    ul, ul.open{
-        display: flex;
-        border: none;
-        margin-left: 2vw; //this lines the left edges of the logo
-        li {
-            border: none;
-        }
-    }
-}
-// end nav stuff
-
-
 div.serviceCards {
-    section {
-        flex-basis: calc(33.33% - (($gutter *2)/3)); //there are 2 gutters in between the cards (gutter*2), and there are 3 cards per row (/3)
+    section { // the 25% below reference how much space 1 card takes up. w 4 cards in a row, dividing 100/4 to get even space
+        flex-basis: calc(25% - (($gutter *3)/4)); //there are 3 gutters in between the cards (gutter*3), and there are 4 cards per row (/4)
     }
 }
 
