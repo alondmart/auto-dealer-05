@@ -75,10 +75,10 @@ nav {
                 padding: .9rem;
                 color: black;
                 text-decoration: none;
+                &:hover {background-color: darken($secondaryColor, 10%);}
             }
         } //end li
         li.active a {background-color: $green;}
-        li a:hover {background-color: darken($secondaryColor, 10%);}
     }// end ul
     ul.open {display: block;}
 }
@@ -130,7 +130,8 @@ div.serviceCards {
             text-align: center;
         }
         img {
-            width: 30%;
+            width: 50%;
+            position: relative;
             margin: auto;
             height: auto;
             display: block; //by default the img is inline, so we change it to block which gets rid of the small gap between things
@@ -140,13 +141,6 @@ div.serviceCards {
             height: auto;
             width: 100%;
             overflow: hidden;
-        }
-        img.animation {
-            padding: 0;
-            transition: all .2s ease-in-out;
-            &:hover {
-                transform: scale(1.1);
-            }
         }
         a {
             display: block; //by default, its inline, and changing it to block lets us add padding
@@ -162,6 +156,11 @@ div.serviceCards {
                 background-color: darken($green, 5%);}
         }
     }
+}
+
+section.scale:hover img {
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
 }
 
 

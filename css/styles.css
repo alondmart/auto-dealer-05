@@ -390,11 +390,11 @@ nav ul li a {
   color: black;
   text-decoration: none;
 }
-nav ul li.active a {
-  background-color: #6B8F71;
-}
 nav ul li a:hover {
   background-color: #cdbebe;
+}
+nav ul li.active a {
+  background-color: #6B8F71;
 }
 nav ul.open {
   display: block;
@@ -442,7 +442,8 @@ div.serviceCards section h2 {
   text-align: center;
 }
 div.serviceCards section img {
-  width: 30%;
+  width: 50%;
+  position: relative;
   margin: auto;
   height: auto;
   display: block;
@@ -452,13 +453,6 @@ div.serviceCards section div.animationContainer {
   height: auto;
   width: 100%;
   overflow: hidden;
-}
-div.serviceCards section img.animation {
-  padding: 0;
-  transition: all 0.2s ease-in-out;
-}
-div.serviceCards section img.animation:hover {
-  transform: scale(1.1);
 }
 div.serviceCards section a {
   display: block;
@@ -473,6 +467,11 @@ div.serviceCards section a {
 }
 div.serviceCards section a:hover {
   background-color: #608065;
+}
+
+section.scale:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 
 div.reviewContainer {
