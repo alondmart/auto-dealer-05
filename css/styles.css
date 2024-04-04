@@ -341,14 +341,12 @@ header {
   padding: 1rem 16px;
   gap: 8px;
   display: grid;
-  grid-template-columns: 62px auto 50px;
+  grid-template-columns: 112px auto 50px;
 }
-header h1 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 600;
+header a.phone {
+  grid-column: 3/span 1;
 }
-header a:hover {
+header change the color of the phone icon when i have the color palette chosen a:hover {
   background-color: rgb(167, 167, 167);
   border-radius: 5px;
 }
@@ -450,6 +448,15 @@ div.allCards section img {
 }
 div.allCards section img.e2e {
   padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+div.allCards section img.e2e:hover {
+  transform: scale(1.1);
+}
+div.allCards section div.scaleContainer {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 div.allCards section p {
   font-style: italic;
